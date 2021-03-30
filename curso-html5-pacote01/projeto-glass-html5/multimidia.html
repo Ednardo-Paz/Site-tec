@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo sobre Google Glass</title>
     <link rel="stylesheet" type="text/css" href="/curso-html5-pacote01/projeto-glass-html5/_css/estilo.css">
+    <link rel="stylesheet" href="/curso-html5-pacote01/projeto-glass-html5/_css/media.css">
 </head>
 <script src="/curso-html5-pacote01/projeto-glass-html5/_javascript/funcoes.js"></script>
 
@@ -24,34 +25,64 @@
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <uL>
-                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"><a href="index.html"> Home</li></a>
-                    <li  onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"><a href="specs.html"> Especificações</li></a>
-                    <li  onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"><a href="fotos.html"> Fotos</li></a>
-                    <li  onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"><a href="multimidia.html"> Multimídia</li></a>
-                    <li  onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"> <a href="fale-conosco.html"> Fale conosco</li></a>
+                    <li onmouseover="mudaFoto('_imagens/home.png')"
+                        onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"><a
+                            href="index.html"> Home</li></a>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"><a
+                            href="specs.html"> Especificações</li></a>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')"
+                        onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"><a
+                            href="fotos.html"> Fotos</li></a>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"><a
+                            href="multimidia.html"> Multimídia</li></a>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')"
+                        onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')"> <a
+                            href="fale-conosco.html"> Fale conosco</li></a>
                 </uL>
             </nav>
 
         </header>
 
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Glass > Multimídia</h3>
+                        <h1>Sons e Vídeos</h1>
+                        <h2>por Gustavo Guanabara</h2>
+                        <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+                </header>
+
+                <div tv-radio>
+                    <audio id="musica" controls="controls"
+                        src="/curso-html5-pacote01/projeto-glass-html5/_media/2009-lovers-carvings-bibio.mp3"
+                        type="audio/mpeg">
+                        Desculpe, mas não foi possivel carregar o áudio.
+
+                    </audio>
+                    <video id="filme" controls="controls" poster="/curso-html5-pacote01/projeto-glass-html5/_imagens/video-mini03.jpg"
+                        src="/curso-html5-pacote01/projeto-glass-html5/_media/getting-started.mp4" type="mp4">
+                        Desculpe, mas não foi possivel carregar o vídeo.
+
+                    </video>
+                </div>
+
+            </article>
+        </section>
 
 
-Áudio e Vídeo
 
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
 
-<footer id="rodape">
-    <p>Copyright&copy; 2013 - by Gustavo Guanabara <br>
-        <a href="https://www.facebook.com/ednardo.paz.7" target="blank"> Facebook</a> | <a
-            href="http://wwww.twitter.com" target="blank"> Twitter
-    </p></a>
-</footer>
-</div>
+        <footer id="rodape">
+            <p>Copyright&copy; 2013 - by Gustavo Guanabara <br>
+                <a href="https://www.facebook.com/ednardo.paz.7" target="blank"> Facebook</a> | <a
+                    href="http://wwww.twitter.com" target="blank"> Twitter
+            </p></a>
+        </footer>
+    </div>
 </body>
 
 </html>
