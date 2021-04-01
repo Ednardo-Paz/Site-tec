@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo sobre Google Glass</title>
     <link rel="stylesheet" type="text/css" href="/curso-html5-pacote01/projeto-glass-html5/_css/estilo.css">
+    <link rel="stylesheet" href="/curso-html5-pacote01/projeto-glass-html5/_css/media.css">
 </head>
 <script src="/curso-html5-pacote01/projeto-glass-html5/_javascript/funcoes.js"></script>
 
@@ -24,55 +25,91 @@
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <uL>
-                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"><a href="index.html"> Home</li></a>
-                    <li  onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"><a href="specs.html"> Especificações</li></a>
-                    <li  onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"><a href="fotos.html"> Fotos</li></a>
-                    <li  onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"><a href="multimidia.html"> Multimídia</li></a>
-                    <li  onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"> <a href="fale-conosco.html"> Fale conosco</li></a>
+                    <li onmouseover="mudaFoto('_imagens/home.png')"
+                        onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"><a
+                            href="index.html"> Home</li></a>
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
+                        onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"><a
+                            href="specs.html"> Especificações</li></a>
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')"
+                        onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"><a
+                            href="fotos.html"> Fotos</li></a>
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
+                        onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"><a
+                            href="multimidia.html"> Multimídia</li></a>
+                    <li onmouseover="mudaFoto('_imagens/contato.png')"
+                        onmouseout="mudaFoto('/curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')"> <a
+                            href="fale-conosco.html"> Fale conosco</li></a>
                 </uL>
             </nav>
 
         </header>
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
-
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
-
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3>Fale Conosco > Contato</h3>
+                        <h1>Formulário de Contato</h1>
+                        <h2>por Gustavo Guanabara</h2>
+                        <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                    </hgroup>
+                </header>
 
 
-[BOTÃO ENVIAR]
 
-<footer id="rodape">
-    <p>Copyright&copy; 2013 - by Gustavo Guanabara <br>
-        <a href="https://www.facebook.com/ednardo.paz.7" target="blank"> Facebook</a> | <a
-            href="http://wwww.twitter.com" target="blank"> Twitter
-    </p></a>
-</footer>
-</div>
+
+                <form action="">
+                    <fieldset id="usuario">
+                        <legend> Identificação do Usuário</legend>
+                        
+                        <p> Nome: <input type="text" name="tNome" size="20" placeholder="Nome completo" maxlength="30 p" id="cNome "> </p>
+                        
+                        <p> Senha: <input type="password" name="tsenha" size="8" maxlength="8" id="csenha" placeholder="8 Dígitos">  </p>
+                        
+                        <p> E-mail: <input type="email" name="tMail" id="cMail" size="20" maxlength="40"> </p>
+
+                        <fieldset id="sexo">
+                            <legend> Sexo:</legend>
+                            <input type="radio" name="tSexo" id="cMasc"> Masculino
+                             <input type="radio" name="tSexo" id="tfem"> Feminino
+                        </fieldset>
+                       <P> Data de Nascimento:</P>
+                    </fieldset>
+
+                    <fieldset id="endereco">
+                        <legend> Endereço do Usuário</legend>
+                        Logradouro:
+                        Número:
+                        Estado:
+                        Cidade:
+                    </fieldset>
+
+                    <fieldset id="mensagem">
+                        <legend> Mensagem do Usuário</legend>
+                        Grau de Urgência:
+                        Mensagem:
+                    </fieldset>
+
+                    <fieldset id="pedido">
+                        <legend> Quero um Google Glass</legend>
+                        Gostaria de adquirir um Google Glass quando disponível
+                        Cor:
+                        Quantidade:
+                        Preço Total: R$
+                    </fieldset>
+
+
+                    [BOTÃO ENVIAR]
+                </form>
+            </article>
+        </section>
+        <footer id="rodape">
+            <p>Copyright&copy; 2013 - by Gustavo Guanabara <br>
+                <a href="https://www.facebook.com/ednardo.paz.7" target="blank"> Facebook</a> | <a
+                    href="http://wwww.twitter.com" target="blank"> Twitter
+            </p></a>
+        </footer>
+    </div>
 </body>
 
 </html>

@@ -220,4 +220,13 @@ footer#rodape p{
     text-align: center;
 }
 
-
+video#oqfazer{
+display: block;
+position: relative;
+left: 50px;
+}
+video#lateral{
+    display: block;
+    position: relative;
+    width: 350px;
+}
